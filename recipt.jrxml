@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="recipt" language="groovy" pageWidth="360" pageHeight="504" columnWidth="320" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="404a6892-bfe4-4404-b268-9f8e726f9552">
+	<property name="ireport.zoom" value="1.9487171000000019"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="146"/>
+	<field name="name" class="java.lang.String"/>
+	<field name="phone" class="java.lang.String"/>
+	<field name="address" class="java.lang.String"/>
+	<field name="deposit1" class="java.lang.Double"/>
+	<field name="deposit2" class="java.lang.Double"/>
+	<field name="deposit3" class="java.lang.Double"/>
+	<field name="damage" class="java.lang.Double"/>
+	<field name="agentFee" class="java.lang.Double"/>
+	<field name="totalDepositAmonut" class="java.lang.Double"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement x="70" y="0" width="173" height="20" uuid="b52e7341-04b9-43bd-8b2f-c0125093f922"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Receipt of House Rent]]></text>
+			</staticText>
+		</band>
+	</title>
+	<summary>
+		<band height="245" splitType="Stretch">
+			<staticText>
+				<reportElement x="13" y="13" width="48" height="20" uuid="6ffc57cf-c47e-4b91-a251-c634d9b0f762"/>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="33" width="48" height="20" uuid="84450a01-664f-43bc-af0b-872712a3ce36"/>
+				<text><![CDATA[Phone]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="53" width="48" height="20" uuid="54b9cca9-b02b-4b8d-9f03-b975ff6bfab6"/>
+				<text><![CDATA[Address]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="92" width="593" height="1" uuid="bab75941-0e2a-4688-bdd1-ee919465818d"/>
+			</line>
+			<staticText>
+				<reportElement x="208" y="13" width="26" height="20" uuid="08ed9fb1-e236-4a8b-87e3-5683ffa03d51"/>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="98" width="83" height="20" uuid="99f39215-9178-43f3-83da-65e63f52ca50"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.5" lineStyle="Dotted"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<text><![CDATA[Fist Deposit]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="140" width="83" height="20" uuid="6d39ddd4-3f98-4924-afe0-9a531779a905"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Dotted"/>
+					<topPen lineWidth="0.0" lineStyle="Dotted"/>
+					<leftPen lineWidth="0.0" lineStyle="Dotted"/>
+					<bottomPen lineWidth="0.5" lineStyle="Dotted"/>
+					<rightPen lineWidth="0.0" lineStyle="Dotted"/>
+				</box>
+				<text><![CDATA[Third  Deposit]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="119" width="83" height="20" uuid="c18cb3d3-d639-43c9-b8bc-a8425e1e6ad2"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Dotted"/>
+					<topPen lineWidth="0.0" lineStyle="Dotted"/>
+					<leftPen lineWidth="0.0" lineStyle="Dotted"/>
+					<bottomPen lineWidth="0.5" lineStyle="Dotted"/>
+					<rightPen lineWidth="0.0" lineStyle="Dotted"/>
+				</box>
+				<text><![CDATA[Second Deposit]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="186" width="83" height="20" uuid="55054054-4cfc-4a11-9a8a-bd55d5bfbba9"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Dotted"/>
+					<topPen lineWidth="0.0" lineStyle="Dotted"/>
+					<leftPen lineWidth="0.0" lineStyle="Dotted"/>
+					<bottomPen lineWidth="0.5" lineStyle="Dotted"/>
+					<rightPen lineWidth="0.0" lineStyle="Dotted"/>
+				</box>
+				<text><![CDATA[Damarage Fee]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="162" width="83" height="20" uuid="c2799200-03fc-4d6c-9b9a-46ca037111d7"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Dotted"/>
+					<topPen lineWidth="0.0" lineStyle="Dotted"/>
+					<leftPen lineWidth="0.0" lineStyle="Dotted"/>
+					<bottomPen lineWidth="0.5" lineStyle="Dotted"/>
+					<rightPen lineWidth="0.0" lineStyle="Dotted"/>
+				</box>
+				<text><![CDATA[Agent Fee]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="207" width="83" height="20" uuid="8793ef95-cb1e-4574-9f80-16a5cc402489"/>
+				<box>
+					<pen lineStyle="Dotted"/>
+					<topPen lineWidth="0.0" lineStyle="Double"/>
+					<leftPen lineStyle="Dotted"/>
+					<bottomPen lineStyle="Dotted"/>
+					<rightPen lineStyle="Dotted"/>
+				</box>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="96" y="98" width="209" height="20" uuid="23e70f3a-eb15-4794-a185-c032b7c08ef6"/>
+				<box rightPadding="2">
+					<bottomPen lineWidth="0.5" lineStyle="Dotted"/>
+				</box>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{deposit1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="96" y="119" width="209" height="20" uuid="7911f644-f4b6-4943-b7d8-5345a3838aa1"/>
+				<box rightPadding="2">
+					<bottomPen lineWidth="0.5" lineStyle="Dotted"/>
+				</box>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{deposit2}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="96" y="140" width="209" height="20" uuid="9b122c1f-ec63-4d86-8b48-9487782f53c9"/>
+				<box rightPadding="2">
+					<bottomPen lineWidth="0.5" lineStyle="Dotted"/>
+				</box>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{deposit3}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="96" y="162" width="209" height="20" uuid="1ff1c45d-7bd5-4005-b80b-a297c1ef276e"/>
+				<box rightPadding="2">
+					<bottomPen lineWidth="0.5" lineStyle="Dotted"/>
+				</box>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{agentFee}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="96" y="186" width="209" height="20" uuid="ae730b1a-0e33-412e-9ebd-661fe2bb38e7"/>
+				<box rightPadding="2">
+					<bottomPen lineWidth="0.5" lineStyle="Dotted"/>
+				</box>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{damage}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="97" y="207" width="209" height="20" uuid="07f74cf7-621b-4cb1-99c0-a941ac9e50c1"/>
+				<box rightPadding="2">
+					<bottomPen lineWidth="0.5" lineStyle="Dotted"/>
+				</box>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{totalDepositAmonut}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="61" y="13" width="116" height="20" uuid="110239d1-d76d-4ecd-b67c-81d5d48762ed"/>
+				<box leftPadding="2" rightPadding="0">
+					<bottomPen lineWidth="0.5" lineStyle="Dotted"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="61" y="33" width="116" height="20" uuid="a5b762ee-eaf8-40d1-baf4-4e989c9fce31"/>
+				<box leftPadding="2" rightPadding="0">
+					<bottomPen lineWidth="0.5" lineStyle="Dotted"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{phone}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="61" y="53" width="116" height="20" uuid="824e8577-a0b8-425e-b843-174f81bf1812"/>
+				<box leftPadding="2" rightPadding="0">
+					<bottomPen lineWidth="0.5" lineStyle="Dotted"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{address}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="234" y="13" width="77" height="20" uuid="a5f861c8-03e4-439a-88de-8802edb21633"/>
+				<box leftPadding="2" rightPadding="0">
+					<bottomPen lineWidth="0.5" lineStyle="Dotted"/>
+				</box>
+				<textFieldExpression><![CDATA[new Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

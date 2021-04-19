@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="1067.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ims.DepositPaymentController">
+   <children>
+      <ScrollPane layoutX="48.0" layoutY="46.0" prefHeight="210.0" prefWidth="1005.0">
+         <content>
+            <TableView fx:id="tableviewR" prefHeight="200.0" prefWidth="1003.0">
+              <columns>
+                <TableColumn fx:id="idColumn" prefWidth="57.0" text="Id" />
+                  <TableColumn fx:id="cname" prefWidth="73.33331298828125" text="Customer" />
+                  <TableColumn fx:id="cphone" prefWidth="73.33331298828125" text="Phone" />
+                  <TableColumn fx:id="caddress" prefWidth="73.33331298828125" text="Address" />
+                  <TableColumn fx:id="typOfHouseColumn" prefWidth="115.0" text="Type of House" />
+                  <TableColumn fx:id="bedroomsColumn" prefWidth="74.0" text="Bedrooms" />
+                  <TableColumn fx:id="bathroomsColumn" prefWidth="96.0" text="Bathrooms" />
+                  <TableColumn fx:id="gardenColumn" prefWidth="66.0" text="Garden" />
+                  <TableColumn fx:id="areaColumn" prefWidth="85.0" text="Area" />
+                  <TableColumn fx:id="deposit1Column" prefWidth="72.0" text="Deposit 1" />
+                  <TableColumn fx:id="deposit2Column" prefWidth="71.0" text="Deposti 2" />
+                  <TableColumn fx:id="deposit3Column" prefWidth="73.33331298828125" text="Deposit 3" />
+                  <TableColumn fx:id="statusColumn" prefWidth="73.33331298828125" text="Status" />
+              </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <Label layoutX="52.0" layoutY="14.0" prefHeight="32.0" prefWidth="252.0" text="Deposit Installment" textFill="#3310e4">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="269.0" prefHeight="17.0" prefWidth="116.0" text="Deposit + Agent Fee" />
+      <Button fx:id="salebtn" layoutX="761.0" layoutY="345.0" mnemonicParsing="false" onAction="#paymentAction" prefHeight="39.0" prefWidth="174.0" text="Payment" textFill="#38720c">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="depositAgent" editable="false" layoutX="202.0" layoutY="265.0" prefHeight="25.0" prefWidth="174.0" text="300 £" />
+      <TextField fx:id="deposit1" editable="false" layoutX="502.0" layoutY="265.0" prefHeight="25.0" prefWidth="174.0" promptText="£" />
+      <Button fx:id="selectbtn1" layoutX="761.0" layoutY="290.0" mnemonicParsing="false" onAction="#selectHouseAction" prefHeight="39.0" prefWidth="174.0" text="Select House" textFill="#0b0bdd">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="391.0" layoutY="269.0" prefHeight="17.0" prefWidth="77.0" text="1st Deposit" />
+      <TextField fx:id="deposit2" editable="false" layoutX="502.0" layoutY="304.0" prefHeight="25.0" prefWidth="174.0" promptText="£" />
+      <Label layoutX="391.0" layoutY="308.0" prefHeight="17.0" prefWidth="77.0" text="2st Deposit" />
+      <TextField fx:id="deposit3" editable="false" layoutX="502.0" layoutY="345.0" prefHeight="25.0" prefWidth="174.0" promptText="£" />
+      <Label layoutX="391.0" layoutY="349.0" prefHeight="17.0" prefWidth="77.0" text="3st Deposit" />
+      <Label layoutX="379.0" layoutY="384.0" prefHeight="17.0" prefWidth="89.0" text="Damage if Any" />
+      <TextField fx:id="damagetxt" editable="false" layoutX="502.0" layoutY="380.0" prefHeight="25.0" prefWidth="174.0" promptText="£" text="0.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="449.0" prefWidth="566.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ims.BookingController">
+   <children>
+      <TableView fx:id="tableview" layoutX="66.0" layoutY="78.0" prefHeight="135.0" prefWidth="429.0">
+        <columns>
+          <TableColumn fx:id="cname" prefWidth="140.0" text="Name" />
+          <TableColumn fx:id="cphone" prefWidth="118.0" text="Phone" />
+            <TableColumn fx:id="caddress" prefWidth="123.0" text="Address" />
+        </columns>
+      </TableView>
+      <Label layoutX="66.0" layoutY="34.0" prefHeight="32.0" prefWidth="251.0" text=" Booking panel">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="66.0" layoutY="244.0" prefHeight="17.0" prefWidth="73.0" text="Name" />
+      <Label layoutX="66.0" layoutY="276.0" text="Phone" />
+      <Label layoutX="66.0" layoutY="307.0" text="Address" />
+      <Button fx:id="bookingbtn" layoutX="153.0" layoutY="387.0" mnemonicParsing="false" onAction="#addBookingAction" prefHeight="32.0" prefWidth="135.0" text="Booking" />
+      <TextField fx:id="nametext" editable="false" layoutX="125.0" layoutY="240.0" prefHeight="25.0" prefWidth="163.0" />
+      <TextField fx:id="phonetxt" editable="false" layoutX="125.0" layoutY="272.0" prefHeight="25.0" prefWidth="163.0" />
+      <TextField fx:id="addresstext" editable="false" layoutX="125.0" layoutY="303.0" prefHeight="25.0" prefWidth="163.0" />
+      <Button fx:id="selectbtn" layoutX="349.0" layoutY="224.0" mnemonicParsing="false" onAction="#selectAction" prefHeight="32.0" prefWidth="135.0" text="Select Customer" />
+      <TextField fx:id="emailtxt" layoutX="125.0" layoutY="336.0" prefHeight="25.0" prefWidth="163.0" />
+      <Label layoutX="66.0" layoutY="336.0" text="Email" />
+   </children>
+</AnchorPane>

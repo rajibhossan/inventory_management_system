@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="bookingNotification" language="groovy" pageWidth="288" pageHeight="432" columnWidth="248" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c11b753b-a2a0-45ec-845c-ba45c5783deb">
+	<property name="ireport.zoom" value="1.331000000000001"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="id" class="java.lang.String"/>
+	<field name="typeOfHouse" class="java.lang.String"/>
+	<field name="bedrooms" class="java.lang.Integer"/>
+	<field name="bathrooms" class="java.lang.Integer"/>
+	<field name="garden" class="java.lang.Boolean"/>
+	<field name="area" class="java.lang.String"/>
+	<field name="price" class="java.lang.Double"/>
+	<field name="quntity" class="java.lang.Integer"/>
+	<field name="status" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="31">
+			<staticText>
+				<reportElement x="0" y="11" width="248" height="20" uuid="08d699b2-18c4-4eba-b69a-e4c6a30f9c3b"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Double"/>
+					<topPen lineWidth="0.0" lineStyle="Double"/>
+					<leftPen lineWidth="0.0" lineStyle="Double"/>
+					<bottomPen lineWidth="1.0" lineStyle="Double"/>
+					<rightPen lineWidth="0.0" lineStyle="Double"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Booking Notification]]></text>
+			</staticText>
+		</band>
+	</title>
+	<summary>
+		<band height="343" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="76" height="17" uuid="d435a614-7f05-44bc-a8ae-1a39c15fa35d"/>
+				<box leftPadding="4">
+					<bottomPen lineWidth="0.5" lineStyle="Dotted"/>
+				</box>
+				<text><![CDATA[Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="17" width="76" height="17" uuid="e88bb670-5a06-4975-8c7f-47d2226a8046"/>
+				<box leftPadding="4">
+					<bottomPen lineWidth="0.5" lineStyle="Dotted"/>
+				</box>
+				<text><![CDATA[Type Of House]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="34" width="76" height="17" uuid="4fe7910d-f827-486d-ade7-e0e5753ce371"/>
+				<box leftPadding="4">
+					<bottomPen lineWidth="0.5" lineStyle="Dotted"/>
+				</box>
+				<text><![CDATA[Bedrooms]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="51" width="76" height="17" uuid="d56d2b11-28a7-4986-89d9-257e9dd0ed8d"/>
+				<box leftPadding="4">
+					<bottomPen lineWidth="0.5" lineStyle="Dotted"/>
+				</box>
+				<text><![CDATA[Bathrooms]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="68" width="76" height="17" uuid="4f28bf01-a489-409b-ab46-2aa2563abe3f"/>
+				<box leftPadding="4">
+					<bottomPen lineWidth="0.5" lineStyle="Dotted"/>
+				</box>
+				<text><![CDATA[Garden]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="85" width="76" height="17" uuid="02d8a715-4bd1-48c9-acef-e2a20921c9e9"/>
+				<box leftPadding="4">
+					<bottomPen lineWidth="0.5" lineStyle="Dotted"/>
+				</box>
+				<text><![CDATA[Area]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="136" width="76" height="17" uuid="bbd9f3b1-5f88-49ae-af70-bd04d9a4e478"/>
+				<box leftPadding="4">
+					<bottomPen lineWidth="0.5" lineStyle="Dotted"/>
+				</box>
+				<text><![CDATA[Price]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="102" width="76" height="17" uuid="ef314096-5432-4efd-9b1d-de9b13968177"/>
+				<box leftPadding="4">
+					<bottomPen lineWidth="0.5" lineStyle="Dotted"/>
+				</box>
+				<text><![CDATA[Quntity]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="119" width="76" height="17" uuid="232a6828-080e-4dbb-aa28-6b5459ecae1d"/>
+				<box leftPadding="4">
+					<bottomPen lineWidth="0.5" lineStyle="Dotted"/>
+				</box>
+				<text><![CDATA[Status]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="76" y="0" width="172" height="17" uuid="6039bffa-df0b-45fa-bc37-cc8988f76064"/>
+				<box leftPadding="4">
+					<bottomPen lineWidth="0.5" lineStyle="Dotted"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="76" y="17" width="172" height="17" uuid="8f6afef1-b0a6-41e3-954c-fbd9496ef24c"/>
+				<box leftPadding="4">
+					<bottomPen lineWidth="0.5" lineStyle="Dotted"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{typeOfHouse}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="76" y="34" width="172" height="17" uuid="fe584113-a36d-4cb4-b989-c2b80ec07da7"/>
+				<box leftPadding="4">
+					<bottomPen lineWidth="0.5" lineStyle="Dotted"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{bedrooms}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="76" y="51" width="172" height="17" uuid="42f0f03c-b218-43ae-945b-3bb664b299de"/>
+				<box leftPadding="4">
+					<bottomPen lineWidth="0.5" lineStyle="Dotted"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{bathrooms}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="76" y="68" width="172" height="17" uuid="9e249629-ef5f-47eb-9b79-ff432c585f4d"/>
+				<box leftPadding="4">
+					<bottomPen lineWidth="0.5" lineStyle="Dotted"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{garden}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="76" y="85" width="172" height="17" uuid="2329cd2a-f179-4747-9a87-22e0a7631ecb"/>
+				<box leftPadding="4">
+					<bottomPen lineWidth="0.5" lineStyle="Dotted"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{area}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="76" y="136" width="172" height="17" uuid="62d71ad6-b21a-424b-94ad-3d259b473c85"/>
+				<box leftPadding="4">
+					<bottomPen lineWidth="0.5" lineStyle="Dotted"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{price}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="76" y="102" width="172" height="17" uuid="be769680-94c6-46ac-8e69-768d3d33ca47"/>
+				<box leftPadding="4">
+					<bottomPen lineWidth="0.5" lineStyle="Dotted"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{quntity}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="76" y="119" width="172" height="17" uuid="8df0aa8b-2fdf-426b-8c64-2a0be39953cb"/>
+				<box leftPadding="4">
+					<bottomPen lineWidth="0.5" lineStyle="Dotted"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{status}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="168" width="248" height="17" uuid="0b9079be-d6e8-4120-87f1-13056b46aa49"/>
+				<box leftPadding="4">
+					<bottomPen lineWidth="0.5" lineStyle="Dotted"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Deposit is included Agent Amount]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="198" width="92" height="17" uuid="08298022-87d7-4ec4-b03d-c023592733b4"/>
+				<box leftPadding="4">
+					<bottomPen lineWidth="0.5" lineStyle="Dotted"/>
+				</box>
+				<text><![CDATA[1st Deposit]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="215" width="92" height="17" uuid="e164c588-88d7-43f3-9359-eafa04e94ce4"/>
+				<box leftPadding="4">
+					<bottomPen lineWidth="0.5" lineStyle="Dotted"/>
+				</box>
+				<text><![CDATA[2nd Deposit]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="232" width="92" height="17" uuid="5850cd34-7d4f-4ade-9f1f-86654908da84"/>
+				<box leftPadding="4">
+					<bottomPen lineWidth="0.5" lineStyle="Dotted"/>
+				</box>
+				<text><![CDATA[3rd Deposit]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="49" y="282" width="124" height="17" uuid="61ab7081-6bc4-4e55-97b4-f736a2b0b76f"/>
+				<box leftPadding="4">
+					<bottomPen lineWidth="0.0" lineStyle="Dotted"/>
+				</box>
+				<textElement>
+					<font size="8" isItalic="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Damage base on situation]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="92" y="198" width="100" height="17" uuid="1d06a9c6-41b8-4159-b95f-261855175e93"/>
+				<box rightPadding="4">
+					<bottomPen lineWidth="1.0" lineStyle="Dotted"/>
+				</box>
+				<textElement textAlignment="Right"/>
+				<text><![CDATA[300£]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="92" y="215" width="100" height="17" uuid="77304eaf-3139-4c34-9e9b-1f5e257b15b6"/>
+				<box rightPadding="4">
+					<bottomPen lineWidth="1.0" lineStyle="Dotted"/>
+				</box>
+				<textElement textAlignment="Right"/>
+				<text><![CDATA[300£]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="92" y="232" width="100" height="17" uuid="d325a097-1088-41fa-87b7-adb91264be49"/>
+				<box rightPadding="4">
+					<bottomPen lineWidth="1.0" lineStyle="Dotted"/>
+				</box>
+				<textElement textAlignment="Right"/>
+				<text><![CDATA[300£]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="249" width="92" height="17" uuid="ee06879d-41f8-4d99-9389-ae926ba80402"/>
+				<box leftPadding="4">
+					<bottomPen lineWidth="0.5" lineStyle="Dotted"/>
+				</box>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="92" y="249" width="100" height="17" uuid="721e7dc3-9382-477c-9ab3-1eee7ad81962"/>
+				<box rightPadding="4">
+					<bottomPen lineWidth="1.0" lineStyle="Dotted"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[900£]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>
